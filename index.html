@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://unpkg.com/blockly/blockly_compressed.js"></script>
+  <script src="https://unpkg.com/blockly/blocks_compressed.js"></script>
+  <script src="https://unpkg.com/blockly/lua_compressed.js"></script>
+  <script src="https://unpkg.com/blockly/msg/en.js"></script>
+</head>
+<body>
+  <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+  <textarea id="codeOutput" style="height: 480px; width: 400px;" readonly></textarea>
+  <xml id="toolbox" style="display: none">
+    <category name="AwesomeWM" colour="#5b80a5">
+      <block type="awesome_keybinding"></block>
+      <block type="awesome_spawn"></block>
+      <block type="awesome_client_rule"></block>
+    </category>
+    <category name="Logic" colour="#5b80a5">
+      <block type="controls_if"></block>
+    </category>
+  </xml>
+  <script src="app.js"></script>
+</body>
+</html>
